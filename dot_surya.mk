@@ -6,14 +6,18 @@
 
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
-# Inherit some common OctaviOS stuff.
-$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
+# Inherit some common DotOS stuff.
+$(call inherit-product, vendor/dot/config/common.mk)
 
-OCTAVI_BUILD_TYPE := Official
-OCTAVI_DEVICE_MAINTAINER := Tushar Bharti
+# Bootanimation Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_PIXEL_CHARGER := true
+
+# Face unlock
+TARGET_USES_FACE_UNLOCK := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := octavi_surya
+PRODUCT_NAME := dot_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X3
