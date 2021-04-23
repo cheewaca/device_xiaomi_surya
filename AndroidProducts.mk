@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/octavi_surya.mk
+    $(LOCAL_DIR)/aosp_surya.mk
 
 COMMON_LUNCH_CHOICES := \
-    octavi_surya-user \
-    octavi_surya-userdebug \
-    octavi_surya-eng
+    aosp_surya-user \
+    aosp_surya-userdebug \
+    aosp_surya-eng
