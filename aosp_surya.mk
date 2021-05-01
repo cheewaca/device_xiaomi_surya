@@ -11,8 +11,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, vendor/aosp/common.mk)
 
 #Gapps
-$(call inherit-product, vendor/gapps/config.mk)
-WITH_GMS := true
+WITH_GAPPS := true
 
 # Blur
 TARGET_SUPPORTS_BLUR := true
@@ -31,3 +30,5 @@ PRODUCT_MODEL := POCO X3
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+BUILD_FINGERPRINT := POCO/surya_global/surya:10/QKQ1.200512.002/V12.0.3.0.QJGMIXM:user/release-keys
